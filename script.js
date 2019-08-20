@@ -4,7 +4,8 @@ var finnishTranslations = {
   manyMore: "...ja monta muuta",
   email: "Sähköposti:",
   businessId: "Y-tunnus",
-  billingAddress: "Laskutusosoite"
+  billingAddress: "Laskutusosoite",
+  underConstruction: "Huom: kehitystyö sivustolla on vielä vaiheessa"
 }
 
 var englishTranslations = {
@@ -13,7 +14,8 @@ var englishTranslations = {
   manyMore: "...and many more",
   email: "Email:",
   businessId: "Business ID:",
-  billingAddress: "Billing address:"
+  billingAddress: "Billing address:",
+  underConstruction: "N.B.: this website is still under construction"
 }
 
 window.onload = function () {

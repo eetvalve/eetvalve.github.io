@@ -5,6 +5,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
     <title>ValveDevs</title>
 
+    <script src="./script.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
             integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
             crossorigin="anonymous"></script>
@@ -13,29 +14,30 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,500,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
-    <script src="./script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
 
 <div class="main-container">
+<div id="underConstruction" class="site-under-construction"></div>
 
     <header>
+
         <h3 class="header-title light-text"> ValveDevs </h3>
-        <div class="header-lang light-text">
-            <h3><span id="en" class="en">en</span><span class="slash">/</span><span id="fi" class="fi">fi</span>
-        </h3></div>
+          <div class="header-lang light-text">
+            <h3>
+                <span id="en" class="en">en</span><span class="slash">/</span><span id="fi" class="fi">fi</span>
+            </h3>
+        </div>
     </header>
 
 
     <section class="jumbotron-container">
 
+
         <div class="logo-and-text-container">
-            <!--  <img class="logo" src="@/assets/simple_logo_with_sub_text2.png" alt="Mountain"> -->
 
             <div class="logo-and-text-container-child">
 
@@ -83,7 +85,8 @@
         <div class="video-section">
             <video playsinline autoplay muted loop poster="kuva.jpg">
 
-                <source src="https://videos.pond5.com/black-silhouette-white-backgroundgirl-dancing-footage-113044954_main_xl.mp4" type="video/mp4">
+                <source src="https://videos.pond5.com/black-silhouette-white-backgroundgirl-dancing-footage-113044954_main_xl.mp4"
+                        type="video/mp4">
 
                 <source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
                 <source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
@@ -204,7 +207,7 @@
                 <b id="businessId"></b>
             </div>
             <div class="text">
-                exxxx
+                3018542-1
             </div>
 
 
@@ -212,7 +215,7 @@
                 <b id="billingAddress"></b>
             </div>
             <div class="text">
-                xxxxxxx
+                pending
             </div>
         </div>
 
@@ -241,7 +244,7 @@
     </div>
 
     <div class="footer-center">
-        &#9400; valveDevs Oy 2019
+        <i class="copyright far fa-copyright"></i> ValveDevs Oy 2019
     </div>
 
 </footer>
