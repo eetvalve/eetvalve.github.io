@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
 
+    <script src="./script.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
@@ -25,7 +26,8 @@
 
     <header>
         <h3 class="header-title light-text"> ValveDevs </h3>
-        <div class="header-lang light-text"><h3><span class="en">en</span><span class="slash">/</span><span class="fi">fi</span>
+        <div class="header-lang light-text">
+            <h3><span id="en" class="en">en</span><span class="slash">/</span><span id="fi" class="fi">fi</span>
         </h3></div>
     </header>
 
@@ -39,7 +41,7 @@
 
 
                 <div class="jumbotron-text-container">
-                    <div class="quote">Looking for a Full-Stack developer for your project?</div>
+                    <div id="quote" class="quote"></div>
                     <div class="some-links-container">
 
                         <div class="link">
@@ -65,7 +67,7 @@
                         </div>
                     </div>
 
-                    <div id="text2">(Do not hesitate to contact)</div>
+                    <div id="text2"></div>
 
 
                 </div>
@@ -121,7 +123,7 @@
                 <!-- backend  -->
                 <div class="language-container">
                     <div class="card card-3">
-                        <i class="icon-size fab fa-java"></i>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/java-coffee-cup-logo.png">
                         <span>Java</span>
                     </div>
 
@@ -134,12 +136,12 @@
                 <!-- databases  -->
                 <div class="language-container">
                     <div class="card card-5">
-                        <i class="icon-size fab fa-angular"></i>
+                        <i class="icon-size fas fa-database"></i>
                         <span>SQL</span>
                     </div>
 
                     <div class="card card-6">
-                        <i class="icon-size fab fa-vuejs"></i>
+                        <img class="mongo-img" src="https://png.pngtree.com/svg/20170216/mongodb_1014590.png">
                         <span>mongoDB</span>
                     </div>
                 </div>
@@ -172,8 +174,7 @@
 
             </div>
 
-            <p class="many-more">
-                <b>...and many more</b>
+            <p id="manyMore" class="many-more">
             </p>
 
         </div>
@@ -188,16 +189,16 @@
     <div class="footer-left-right-container">
         <div class="footer-left">
             <div>
-                <b>Email:</b>
+                <b id="email"></b>
             </div>
 
             <div class="text">
-                eetu.valve@valvedevs.com
+                eetu.valve(at)valvedevs.com
             </div>
 
 
             <div>
-                <b>Business ID:</b>
+                <b id="businessId"></b>
             </div>
             <div class="text">
                 exxxx
@@ -205,7 +206,7 @@
 
 
             <div>
-                <b>Billing address:</b>
+                <b id="billingAddress"></b>
             </div>
             <div class="text">
                 xxxxxxx

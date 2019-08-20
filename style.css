@@ -66,6 +66,10 @@ a:hover {
     .logo-and-text-container {
         top: 6vh !important;
     }
+
+    .jumbotron-container {
+        height: 500px;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -76,6 +80,11 @@ a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+
+    .jumbotron-container {
+        height: 45vh !important;
+    }
+
     footer {
         font-size: 13px !important;
     }
@@ -284,8 +293,14 @@ span {
 
 .many-more {
     text-align: center;
+    font-weight: bold;
 }
 
+
+.mongo-img {
+    max-height: 50%;
+    max-width: 100%;
+}
 
 /* jumbotron */
 
@@ -407,7 +422,8 @@ video {
     position: relative;
     display: flex;
     overflow: hidden;
-    height: 45vh;
+   /* height: 45vh; */
+    height: 560px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
