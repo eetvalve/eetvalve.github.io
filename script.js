@@ -1,7 +1,7 @@
 var finnishTranslations = {
   quote: "Etsitkö Full-Stack kehittäjää projektiin?",
-  text2: "(älä epäröi olla yhteydessä)",
-  manyMore: "...ja monta muuta",
+  text2: "( älä epäröi olla yhteydessä )",
+  manyMore: "...lisätietoja saa pyytämällä CV:n",
   email: "Sähköposti:",
   businessId: "Y-tunnus",
   billingAddress: "Laskutusosoite",
@@ -10,8 +10,8 @@ var finnishTranslations = {
 
 var englishTranslations = {
   quote: "Looking for a Full-Stack developer for your project?",
-  text2: "(do not hesitate to contact)",
-  manyMore: "...and many more",
+  text2: "( do not hesitate to contact )",
+  manyMore: "...ask for Resume for more information",
   email: "Email:",
   businessId: "Business ID:",
   billingAddress: "Billing address:",
@@ -44,7 +44,7 @@ window.onload = function () {
 
   function setActiveColor(removeActive) {
     if (removeActive) {
-      document.getElementById(removeActive).style.color = "black"
+      document.getElementById(removeActive).style.color = "white"
     }
     document.getElementById(activeLang).style.color = "#fc5367"
   }

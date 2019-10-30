@@ -8,7 +8,7 @@ body {
 }
 
 .site-under-construction {
-    display: flex;
+    display: none;
     width: 100%;
     background-color: #1A1A1A;
     color: white;
@@ -52,7 +52,7 @@ footer {
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .copyright {
@@ -79,102 +79,16 @@ a:hover {
     color: white;
 }
 
+.mail:hover {
+    color: white;
+}
+
 @media only screen and (max-height: 1080px) {
     .logo-and-text-container {
-        top: 6vh !important;
     }
 
     .jumbotron-container {
         height: 500px;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    .quote {
-        font-size: 55px !important;
-    }
-
-}
-
-@media only screen and (max-width: 767px) {
-
-    header {
-        align-items: flex-start !important;
-        margin-left: 5px !important;
-        margin-right: 5px !important;
-    }
-
-    .jumbotron-container {
-        height: 45vh !important;
-    }
-
-    footer {
-        font-size: 13px !important;
-    }
-
-    .footer-right, .footer-left {
-        padding: 10px 10px 0px 10px !important;
-    }
-
-    .card-container {
-        margin-right: 10px !important;
-    }
-
-    .card {
-        font-size: 13px !important;
-        height: 80px !important;
-        margin: 2px !important;
-    }
-
-    .icon-size {
-        font-size: 30px !important;
-    }
-
-    .header-title {
-        font-size: 20px !important;
-    }
-
-    .header-lang h3 {
-        margin: 0 !important;
-        font-size: 15px !important;
-    }
-
-    .dev-stack {
-        font-size: 25px !important;
-    }
-
-    .logo-and-text-container-child {
-        width: 50% !important;
-    }
-
-    .quote {
-        font-size: 30px !important;
-    }
-
-    .some-links-container {
-        flex-direction: column !important;
-        align-items: baseline !important;
-        font-size: 16px !important;
-        margin-top: 0 !important;
-        min-width: 238px;
-    }
-
-    .minus {
-        display: none;
-    }
-
-    #text2 {
-        display: none;
-    }
-
-    .logo-and-text-container {
-        top: 10vh !important;
-        width: 85% !important;
-    }
-
-    .language-container {
-        margin: 2px !important;
-        min-width: 65px !important;
     }
 }
 
@@ -203,6 +117,7 @@ header {
     z-index: 99999;
     font-size: 30px;
     font-family: 'Pacifico', cursive;
+    color: white;
 }
 
 
@@ -215,6 +130,8 @@ header {
     z-index: 99999;
     float: right;
     text-align: right;
+    font-size: 22px;
+    color: white;
 }
 
 .en:hover, .fi:hover {
@@ -240,7 +157,7 @@ header {
 }
 
 .major-card {
-
+    margin-bottom: 26px;
 }
 
 .title {
@@ -323,7 +240,7 @@ span {
 
 .many-more {
     text-align: center;
-    font-weight: bold;
+    font-weight: 200;
 }
 
 
@@ -439,7 +356,7 @@ video {
     background-position: 50% 50%;
     position: absolute;
     /* max-width: 100%; */
-    min-width: 129%;
+    min-width: 100%;
     min-height: 100%;
 }
 
@@ -448,7 +365,7 @@ video {
     display: flex;
     overflow: hidden;
     /* height: 45vh; */
-    height: 560px;
+    height: 618px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -499,7 +416,7 @@ video {
 .logo-and-text-container {
     position: absolute;
     left: 0;
-    top: 12vh;
+    top: 10vh;
     right: 0;
     z-index: 5;
     text-align: center;
@@ -523,14 +440,15 @@ video {
 }
 
 .some-links-container {
-    font-size: 26px;
+    font-size: 36px;
     text-align: center;
     /* max-width: 500px; */
     margin-top: 20px;
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    text-align: left;
     flex-wrap: wrap;
+    color: rgba(255, 255, 255, 0.62);
 }
 
 .link {
@@ -599,3 +517,137 @@ video {
 }
 
 
+@media only screen and (min-width: 767px) {
+    video {
+        top: -69%;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 767px) {
+    video {
+        left: -55%;
+    }
+}
+
+@media only screen and (min-width: 2100px ) {
+    video {
+        top: -100%;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .quote {
+        font-size: 55px !important;
+    }
+
+}
+
+@media only screen and (min-width: 1500px) {
+    .logo-and-text-container {
+        left: 150px;
+        top: 10vh;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .footer-left-right-container {
+        font-size: 10px;
+    }
+
+    .many-more {
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+    header {
+        align-items: flex-start !important;
+        margin-left: 5px !important;
+        margin-right: 5px !important;
+    }
+
+    .jumbotron-container {
+        height: 45vh !important;
+    }
+
+    footer {
+        font-size: 13px !important;
+    }
+
+    .footer-right, .footer-left {
+        padding: 10px 10px 0px 10px !important;
+    }
+
+    .card-container {
+        margin-right: 10px !important;
+    }
+
+    .card {
+        font-size: 13px !important;
+        height: 80px !important;
+        margin: 2px !important;
+    }
+
+    .icon-size {
+        font-size: 30px !important;
+    }
+
+    .header-title {
+        font-size: 20px !important;
+    }
+
+    .header-lang h3 {
+        margin: 0 !important;
+
+    }
+
+    .dev-stack {
+        font-size: 25px !important;
+    }
+
+    .logo-and-text-container-child {
+        width: 50% !important;
+    }
+
+    .quote {
+        font-size: 30px !important;
+    }
+
+    .some-links-container {
+        flex-direction: column !important;
+        align-items: baseline !important;
+        font-size: 16px !important;
+        margin-top: 0 !important;
+        min-width: 238px;
+    }
+
+    .minus {
+        display: none;
+    }
+
+    #text2 {
+        display: none;
+    }
+
+    .logo-and-text-container {
+        top: 10vh !important;
+        width: 85% !important;
+    }
+
+    .language-container {
+        margin: 2px !important;
+        min-width: 65px !important;
+    }
+
+    video {
+        max-width: 140% !important;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-height: 750px) {
+    video {
+    max-width: 170% !important;
+}
+}
